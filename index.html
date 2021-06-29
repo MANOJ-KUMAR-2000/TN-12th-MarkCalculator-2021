@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>NSCET 12th Mark Calculator 2021</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header class="header-head">
+        <h1 id='collage-name'>NADAR SARASWATHI COLLEGE OF ENGINEERING AND TECHNOLOGY</h1>
+    </header>
+    <div id="logo-id">
+        <img src='College logo.png'>
+    </div>
+    <h1 id="main-heading">12th Mark Calculator</h1>
+    <div class="start-para">
+        <p>Note: Calculating the marks based on the new rules that Tamil Nadu Government has released. Please find the Government Press Release on the same <a href="https://tn12marks.online/DIPR-P.R%20NO.328-Hon'ble%20CM%20Press%20Release%20-%2012th%20Std-Mark%20System%20-Date%2026.6.2021.pdf">here</a>.</p>
+
+        <p>We do not store any information from this page. It just acts as a calculator based on your marks.</p>
+    </div>
+
+    <form onsubmit="return false">
+        <div class="mark-form">
+            <h1 class='heads'>SSLC Marks(50%)</h1>
+            <p>Average of top 3 subjects will be calculated based on the marks below.</p>
+            <h3>Language 1 <sup>*</sup></h3>
+            <input id='tenth_language1' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Language 2 <sup>*</sup></h3>
+            <input id='tenth_language2' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Mathematics <sup>*</sup></h3>
+            <input id='tenth_maths' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Science <sup>*</sup></h3>
+            <input id='tenth_science' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Social Science <sup>*</sup></h3>
+            <input id='tenth_social' type="number" max="100" min='0' placeholder="  /100" required/>
+        </div>
+
+
+        <div class="mark-form">
+            <h1 class='heads'>+1 Marks (20%)</h1>
+            <p>Average of 20% marks in each subject's Written Exam mark will be calculated based on the marks below.</p>
+            <h3>Subject 1[Lang 1](incl. internal - 10 marks) <sup>*</sup></h3>
+            <input id='eleven_language1' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Subject 2[Lang 2](incl. internal - 10 marks) <sup>*</sup></h3>
+            <input id='eleven_language2' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Subject 3[Maths](incl. internal - 10 marks) <sup>*</sup></h3>
+            <input id='eleven_sub1' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Subject 4(incl. partical - 30 marks) <sup>*</sup></h3>
+            <input id='eleven_sub2' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Subject 5(incl. partical - 30 marks) <sup>*</sup></h3>
+            <input id='eleven_sub3' type="number" max="100" min='0' placeholder="  /100" required/>
+            <h3>Subject 6(incl. partical - 30 marks) <sup>*</sup></h3>
+            <input id='eleven_sub4' type="number" max="100" min='0' placeholder="  /100" required/>
+        </div>
+
+
+        <div class="mark-form">
+            <h1 class='heads'>+2 Marks (30% - Auto filled - Practical+Internal)</h1>
+            <h3>Subject 1[Lang 1] <sup>*</sup></h3>
+            <input id='twelth_language1' type="number" value="30" max="30" min="0" placeholder="  /30" required/>
+            <h3>Subject 2[Lang 2]<sup>*</sup></h3>
+            <input id='twelth_language2' type="number" value="30" max="30" min="0" placeholder="  /30" required/>
+            <h3>Subject 3[Maths] <sup>*</sup></h3>
+            <input id='twelth_sub1' type="number" value="30" max="30" min="0" placeholder="  /30" required/>
+            <h3>Subject 4 <sup>*</sup></h3>
+            <input id='twelth_sub2' type="number" value="30" max="30" min="0" placeholder="  /30" required/>
+            <h3>Subject 5<sup>*</sup></h3>
+            <input id='twelth_sub3' type="number" value="30" max="30" min="0" placeholder="  /30" required/>
+            <h3>Subject 6 <sup>*</sup></h3>
+            <input id='twelth_sub4' type="number" value="30" max="30" min="0" placeholder="  /30" required/>
+        </div>
+        <div class="final-btn-div">
+            <input type="submit" id="res-btn" onclick="show12thMark()" value="Calculate My Mark"/>
+        </div> 
+    </form>
+
+
+
+    <div class="result">
+        <p id="res-id">Your mark : /600</p>
+    </div>
+
+    <footer>
+    <div><p>&copy; Innovative Software Product Industry of NSCET</p></div>
+    </footer>
+
+    <script src="./calculate.js"></script>
+</body>
+
+</html>

@@ -145,7 +145,7 @@ input[type='number'] {
 
 .result {
     text-align: center;
-    margin: 16px 0px 64px 0px;
+    margin: 16px 0px 28px 0px;
 }
 
 #res-id {
@@ -157,18 +157,41 @@ input[type='number'] {
     box-shadow: 0px 0px 6px 1px black;
 }
 
-@media (min-width:768px){
+.final-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.final-links a {
+    padding: 6px 12px;
+    margin: 0px 0px 64px 0px;
+    color: #104565;
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 8px 1px black;
+    border-radius: 26px;
+    font-size: 26px;
+    text-decoration: none;
+}
+
+.final-links a:hover {
+    padding: 6px 12px;
+    color: white;
+    background-color: #104565;
+    text-decoration: none;
+}
+
+@media (min-width:768px) {
     footer>div>p {
         text-align: center;
         color: #104565;
-        font-size:18px;
+        font-size: 18px;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
     footer>div>p {
         text-align: center;
         color: #104565;
-        font-size:14px;
+        font-size: 14px;
     }
 }

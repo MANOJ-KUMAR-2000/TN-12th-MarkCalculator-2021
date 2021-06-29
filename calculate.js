@@ -34,11 +34,11 @@ function check(eleven_marks, tenth_marks) {
         if (eleven_marks[i] == "" || tenth_marks[i] == "") {
             return false;
         }
-        if (eleven_marks[i] >100 || tenth_marks[i] >100) {
+        if (eleven_marks[i] > 100 || tenth_marks[i] > 100) {
             return false;
         }
         if (eleven_marks[-1] == "") {
-            return false
+            return false;
         }
     }
     return true;
